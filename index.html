@@ -13,20 +13,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="style.css">
 
 </head>
   <body>
+
+    <div class="splash-screen">
+        <div class="splash-content">
+            <img src="img/rings.png" alt="rings" width="90" height="90" transform= "rotate(25px)">
+        </div>
+    </div>
+
     
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black">
         <main>
-            <img src="img/rings.png" width="70" height="70" alt="rings" transform: rotate(45deg)>
-            <h4>The Engagement Of</h4>
-            <h1>Anggi <br>&</br>Disky</h1>
-            <a href="#undangan" class="button btn btn-outline-warning btn-lg">Buka Undangan</a>
+            <!-- <img src="img/rings.png" width="70" height="70" alt="rings" transform: rotate(45deg)> -->
+            <!-- <h4>The Engagement Of</h4>
+            <h1>Anggi Nurul</h1>
+            <h1 id="dan">&</h1>
+            <h1>Disky Adit</h1> -->
+            <!-- <a href="#undangan" class="button btn btn-outline-warning btn-lg">Buka Undangan</a> -->
+            <audio id="background-music" src="/audio/save-and-sound.mp3" loop preload="auto"></audio>
+
+          
+              <div class="audio-icon-wrapper">
+                <i class="bi bi-disc"></i>
+              </div>
         </main>
+
+       
     </section>
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector('.splash-screen').classList.add('fade-out');
+
+                 // Mulai memutar musik setelah splash screen menghilang
+                const music = document.getElementById('background-music');
+                music.play().catch(function(error) {
+                console.log('Music play was prevented:', error);
+            });
+
+            }, 13000); // Ubah waktu sesuai kebutuhan, misalnya 3000ms (3 detik)
+        });
+
+        function playAudio() {
+        song.play();
+        isPlaying = true;
+        }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
