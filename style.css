@@ -1,0 +1,38 @@
+:root {
+    --babyBlue: #89cff0;
+    --bg: #fff;
+    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+    --gold: #d7a40a;
+}
+
+body {
+    font-size: 1,8rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 2000px;
+    background-image: url(img/bg.png);
+}
+
+.hero img {
+    transform: rotate(21deg);
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.hero h4 {
+    font-size: 1,6rem;
+}
+
+.hero h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 6rem;
+    color: 	#d7a40a;
+    text-shadow: var(--shadow);
+}
+
+.hero a {
+    margin-top: 20px;
+    color: var(--gold);
+    outline-color: var(var(--gold))
+}
