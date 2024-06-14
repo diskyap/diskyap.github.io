@@ -51,14 +51,17 @@
     <script>
         
         document.addEventListener("DOMContentLoaded", function() {
+
+        const music = document.getElementById('background-music');
+                music.play().catch(function(error) {
+                console.log('Music play was prevented:', error);
+            });
+          
             setTimeout(function() {
                 document.querySelector('.splash-screen').classList.add('fade-out');
 
                  // Mulai memutar musik setelah splash screen menghilang
-                const music = document.getElementById('background-music');
-                music.play().catch(function(error) {
-                console.log('Music play was prevented:', error);
-            });
+                
 
             }, 5000); // Ubah waktu sesuai kebutuhan, misalnya 3000ms (3 detik)
         });
