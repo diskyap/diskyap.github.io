@@ -37,7 +37,7 @@
             <h1 id="dan">&</h1>
             <h1>Disky Adit</h1> -->
             <!-- <a href="#undangan" class="button btn btn-outline-warning btn-lg">Buka Undangan</a> -->
-            <audio id="background-music" src="only.mp3" loop preload="auto"></audio>
+            <audio id="background-music" src="only.mp3" loop></audio>
 
           
               <div class="audio-icon-wrapper">
@@ -52,9 +52,8 @@
         
         document.addEventListener("DOMContentLoaded", function() {
 
-        const music = document.getElementById('background-music');
-                music.play().catch(function(error) {
-                console.log('Music play was prevented:', error);
+            const music = document.getElementById('background-music');
+                music.play()
             });
           
             setTimeout(function() {
@@ -63,7 +62,7 @@
                  // Mulai memutar musik setelah splash screen menghilang
                 
 
-            }, 5000); // Ubah waktu sesuai kebutuhan, misalnya 3000ms (3 detik)
+            }, 2000); // Ubah waktu sesuai kebutuhan, misalnya 3000ms (3 detik)
         });
 
     </script>
