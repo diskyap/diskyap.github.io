@@ -52,9 +52,7 @@
         
         document.addEventListener("DOMContentLoaded", function() {
 
-            const music = document.getElementById('background-music');
-                music.play()
-            });
+            
           
             setTimeout(function() {
                 document.querySelector('.splash-screen').classList.add('fade-out');
@@ -63,6 +61,11 @@
                 
 
             }, 2000); // Ubah waktu sesuai kebutuhan, misalnya 3000ms (3 detik)
+
+            const music = document.getElementById('background-music');
+                music.play()
+            });
+          
         });
 
     </script>
